@@ -16,6 +16,7 @@
    npm install      //安装依赖包
 5. set DEBUG=demo:* & npm start  //windows 下的启动命令
 6. DEBUG=demo:* npm start      //MacOS 或 Linux 下的启动命令
+7. 用浏览器打开 http://localhost:9999 即可
 
 #### 使用说明
 

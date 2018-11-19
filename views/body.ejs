@@ -1,0 +1,23 @@
+<div class="bodyDiv">
+	<div class="leftBody">
+		<%- include('menu') %>
+	</div>
+	<div class="rightBody">
+		<% switch(path){ //注意这里没有代码块结束符号，而是要和下面合并在一个代码块里，才能正常
+			case 'bj_gugong': %>
+				<%- include('bj_gugong') %>
+				<% break; %>
+			<% case 'bj_changcheng': %>
+				<%- include('bj_changcheng') %>
+				<% break; %>
+			<% case 'bj_tiantangongyuan': %>
+				<%- include('bj_tiantangongyuan') %>
+				<% break; %>
+			<% default: %>
+				<%- include('bj_gugong') %>
+				<% break; %>
+		<% } %>
+
+
+	</div>
+</div>

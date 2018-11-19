@@ -1,0 +1,66 @@
+<div id="menu">
+    <!--隐藏菜单-->
+    <div id="ensconce">
+        <h2>
+            <img src="images/show.png" alt="">
+            展开
+        </h2>
+    </div>
+
+    <!--显示菜单-->
+    <div id="open">
+        <div class="navH">
+            主页
+            <span><img class="obscure" src="images/obscure.png" alt=""></span>
+        </div>
+        <div class="navBox">
+            <ul>
+                <li>
+                    <% if(firstPath == 'bj'){ %>
+                        <h2 class="obFocus" >北京景点<i class="arrowRot"></i></h2>
+                            <div class="secondary" style="height:2.5078rem;">
+                    <% }else{ %>
+                        <h2 class="obtain" >北京景点<i></i></h2>
+                            <div class="secondary">
+                    <% } %>
+
+                    <% if(secondPath == 'gugong'){ %>
+                        <a href="bj_gugong"><h3 class="secondFocus">故宫</h3></a>
+                    <% }else{ %>
+                        <a href="bj_gugong"><h3>故宫</h3></a>
+                    <% } %>
+
+                    <% if(secondPath == 'changcheng'){ %>
+                        <a href="bj_changcheng"><h3 class="secondFocus">长城</h3></a>
+                    <% }else{ %>
+                        <a href="bj_changcheng"><h3>长城</h3></a>
+                    <% } %>
+
+                    <% if(secondPath == 'tiantangongyuan'){ %>
+                        <a href="bj_tiantangongyuan"><h3 class="secondFocus">天坛公园</h3></a>
+                    <% }else{ %>
+                        <a href="bj_tiantangongyuan"><h3>天坛公园</h3></a>
+                    <% } %>
+                            </div>
+                </li>
+                <li>
+                    <h2 class="obtain">南京景点<i></i></h2>
+                    <div class="secondary">
+                        <a href="nj_xixiashi"><h3>栖霞寺</h3></a>
+                        <a href="nj_fuzimiao"><h3>夫子庙</h3></a>
+                        <a href="nj_haidishijie"><h3>海底世界</h3></a>
+                    </div>
+                </li>
+                <li>
+                    <h2 class="obtain">上海景点<i></i></h2>
+                    <div class="secondary">
+                        <a href="sh_dongfangmingzhu"><h3>东方明珠</h3></a>
+                        <a href="sh_waitan"><h3>外滩</h3></a>
+                        <a href="sh_wenmiao"><h3>文庙</h3></a>
+                        <a href="sh_shiboyuan"><h3>世博园</h3></a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

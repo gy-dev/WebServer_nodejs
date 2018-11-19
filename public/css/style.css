@@ -1,8 +1,51 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+body{
+	width:100%; 
+	height:100%;
+	margin: 0;
+}
+
+.headDiv{
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 50px;
+	background-color: #00B7FF;
+}
+
+.bodyDiv{
+	width: 100%;
+	position: absolute;
+	top: 50px;
+	bottom: 30px;
+	height: auto;
+}
+
+.footDiv{
+	position: absolute;
+	width: 100%;
+	height: 30px;
+	bottom: 0;
+}
+
+.leftBody{
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 260px;
+}
+.rightBody{
+	position: absolute;
+	top: 0;
+	bottom: 0px;
+	left: 260px;
+	right: 0;
+	/* height: 100%; */
+	margin: 8px;
+	width: auto;
+	background: #00B7FF;
 }
 
 a {
-  color: #00B7FF;
+	color: #00B7FF;
 }
